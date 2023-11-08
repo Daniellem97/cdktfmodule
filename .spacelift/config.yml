@@ -1,7 +1,7 @@
 version: "1"
 module_version: 0.0.1
 
-modules:
+stacks:
     # The key of is the immutable slug of your stack
     # which you will find in the URL.
     terraform-module-test: &shared
