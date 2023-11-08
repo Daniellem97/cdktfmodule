@@ -1,0 +1,11 @@
+version: "1"
+
+modules:
+    # The key of is the immutable slug of your stack
+    # which you will find in the URL.
+    terraform-module-test: &shared
+        before_init:
+            - pipenv install
+            - cdktf synth
+            - cp cdktf.out/stacks/${TF_VAR_spacelift_stack_id}/cdk.tf.json .
+        runner_image: jmfontaine:runner-terraform:python
