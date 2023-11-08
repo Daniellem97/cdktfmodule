@@ -1,0 +1,4 @@
+*.terraform
+cdktf.out
+*.pyc
+__pycache__
