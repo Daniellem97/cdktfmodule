@@ -1,5 +1,5 @@
 version: "1"
-module_version: 0.0.1
+module_version: 0.0.2
 
 stacks:
     # The key of is the immutable slug of your stack
